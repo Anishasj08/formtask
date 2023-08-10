@@ -1,0 +1,27 @@
+<div >
+    <table class="table table-striped" *ngIf="getstudentArray.length>0; else dontshow ">
+        <thead>
+            <tr>
+                <th>sr.no</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of getstudentArray; let i=index" >
+                <td>{{i+1}}</td>
+                <td>{{student.fname}}</td>
+                <td>{{student.lname}}</td>
+                <td>{{student.email}}</td>
+                <td>{{student.contact}}</td>
+               
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<ng-template #dontshow>
+    <p class="alert alert-success">Student is not get Added Yet</p>
+</ng-template>

@@ -1,0 +1,25 @@
+<div class="mt-5">
+    <div class="form-group">
+        <label for="fname">First Name</label>
+        <input type="text" #fnamecontrol class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="lname">last Name</label>
+        <input type="text" #lnamecontrol class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="email">email Name</label>
+        <input type="text" #emailcontrol class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="contact">contact Number</label>
+        <input type="text"  #contactcontrol class="form-control">
+    </div>
+    <div class="text-right">
+        <button 
+        (click)="Addonhand($event)"
+        class="btn btn-primary">
+            Add Student
+        </button>
+    </div>
+</div>
